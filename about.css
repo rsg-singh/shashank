@@ -1,0 +1,76 @@
+.about .welcome-screen {
+    background: radial-gradient(circle at top, rgba(108, 246, 210, 0.45), transparent 50%), linear-gradient(45deg, #0d1b3a, #2b7a78);
+}
+
+.about .main-content::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body.light-mode .about .main-content::before {
+    opacity: 0.08;
+}
+
+.about .profile-card {
+    animation: floatSlow 10s ease-in-out infinite;
+}
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 40%;
+  border: 2px solid var(--accent);
+  object-fit: cover;
+}
+
+.about .timeline-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.about .timeline-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(124, 135, 255, 0.12), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.about .timeline-card:hover::after {
+    opacity: 1;
+}
+
+.about .apad {
+    width: 37px;
+    height: 35px;
+}
+
+.about .section-title {
+    text-shadow: 0 18px 40px rgba(12, 15, 31, 0.25);
+}
+
+.about .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.about .focus-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.4s ease, border 0.3s ease;
+}
+
+.about .focus-card:hover {
+    transform: translateY(-6px) rotateX(4deg) rotateY(-4deg);
+    border-color: var(--accent);
+}

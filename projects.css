@@ -1,0 +1,33 @@
+.projects .welcome-screen {
+    background: radial-gradient(circle at top, rgba(124, 135, 255, 0.5), transparent 45%), linear-gradient(45deg, #1b103a, #4953ff);
+    overflow: hidden;
+}
+
+.projects .project-thumb {
+    width: 100%;
+    height: 190px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(12, 15, 31, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.light-mode .projects .project-thumb {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(58, 77, 216, 0.12);
+}
+
+.projects .project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.2) contrast(1.05);
+    transition: transform 0.6s ease;
+}
+
+.projects .project-tile:hover .project-thumb img {
+    transform: scale(1.03);
+}

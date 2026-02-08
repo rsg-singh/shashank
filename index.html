@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Shashank Singh Parihar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+</head>
+<body class="body home">
+    <div class="welcome-screen">
+          <svg viewBox="0 0 800 200" class="svg-container">
+              <text x="50%" y="50%" text-anchor="middle" class="shashank-text">Welcome</text>
+          </svg>
+      </div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-ring"></div>
+        <p class="loader-text">Loading experience...</p>
+    </div>
+
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+
+    <div class="navigation">
+        <div class="nav-brand">
+            <span class="s">S</span>
+            <span class="shashank">haShank</span>
+        </div>
+        <ul class="ul- nav-menu" id="ula">
+            <li class="list active nav-1 dis-hidde">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="Projects.html">
+                    <span class="icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </span>
+                    <span class="text">My Projects</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="contact.html">
+                    <span class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="about.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">About Me</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="services.html">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="text">Services</span>
+                </a>
+            </li>
+            <li class="list nav-1 hamburger dis-hidden">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </span>
+                    <span class="text">Menu</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+
+        <div class="nav-actions">
+            <a class="nav-cta" href="contact.html">Let's Talk</a>
+            <div class="dark-mode-toggle" id="darkModeToggle">
+                <div class="sun-toggle">
+                    <ion-icon name="sunny" class="sun"></ion-icon>
+                </div>
+                <div class="moon-toggle">
+                    <ion-icon name="moon"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="hero section page parallax-surface" id="home">
+            <div class="container hero-left">
+                <p class="eyebrow reveal">Creative Developer · UI Engineer · Freelancer</p>
+                <div class="text first-text pad reveal">Welcome to My Portfolio</div>
+                <span class="text first-text reveal">I am</span>
+                <span class="text sec-text reveal">I am</span>
+                <p class="lead reveal">I craft immersive web experiences with bold visuals, smooth interactions, and performance-first engineering. My focus is on turning ideas into delightful, high-impact digital products.</p>
+                <div class="hero-actions reveal">
+                    <button class="con-btn">Contact Me</button>
+                    <a class="ghost-btn" href="Projects.html">View Projects</a>
+                </div>
+                <div class="hero-social reveal">
+                    <button>
+                        <a href="https://www.facebook.com/profile.php?id=61557376978980">
+                            <img src="images/facebook.svg" alt="facebook" class="apad"/>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://x.com/rsg_sing">
+                            <img src="images/twitter.svg" alt="twitter" class="apad"/>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#linkedin">
+                            <img src="images/linkedin.svg" alt="linkedIn" class="apad"/>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#mail">
+                            <img src="images/mail.svg" alt="mail" class="apad"/>
+                        </a>
+                    </button>
+                </div>
+                <div class="hero-badges reveal">
+                    <span class="badge">Available for freelance</span>
+                    <span class="badge">Based in India</span>
+                    <span class="badge">Open to remote</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="frame parallax-item" data-depth="18">
+                    <img src="images/shashank.png" alt="Your Image" style="height=120px;">
+                </div>
+                <div class="floating-card parallax-item" data-depth="12">
+                    <p class="floating-title">Currently Building</p>
+                    <p class="floating-value">Modern SaaS dashboards</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section page">
+            <div class="section-head reveal">
+                <h2 class="section-title">Impact Highlights</h2>
+                <p class="section-sub">Results-driven design and development that elevates brands.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <h3>30+</h3>
+                    <p>Projects shipped</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3>4+ yrs</h3>
+                    <p>Hands-on experience</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3>96%</h3>
+                    <p>Client satisfaction</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3>48 hrs</h3>
+                    <p>Avg. delivery for MVPs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section page" id="services">
+            <div class="section-head reveal">
+                <h2 class="section-title">Signature Services</h2>
+                <p class="section-sub">I blend strategy, aesthetics, and engineering into a seamless experience.</p>
+            </div>
+            <div class="card-grid">
+                <article class="service-card reveal">
+                    <h3>Web Experience Design</h3>
+                    <p>Concept-to-launch design systems, responsive UI, and conversion-focused layouts.</p>
+                    <span class="chip">UI/UX</span>
+                </article>
+                <article class="service-card reveal">
+                    <h3>Front-End Engineering</h3>
+                    <p>High-performance interfaces using modern frameworks, animations, and clean architecture.</p>
+                    <span class="chip">React + JS</span>
+                </article>
+                <article class="service-card reveal">
+                    <h3>Brand & Motion</h3>
+                    <p>Animated storytelling, micro-interactions, and bold visual identity for products.</p>
+                    <span class="chip">Motion</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects-preview section page">
+            <div class="section-head reveal">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-sub">A glimpse at my latest builds and experiments.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card reveal">
+                    <div class="project-tag">SaaS</div>
+                    <h3>Focus OS Dashboard</h3>
+                    <p>Clean analytics dashboard with animated insights and dark/light modes.</p>
+                    <a class="project-link" href="Projects.html">View case study</a>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-tag">E-commerce</div>
+                    <h3>SpiceCraft Storefront</h3>
+                    <p>High-conversion store UI with immersive product storytelling.</p>
+                    <a class="project-link" href="Projects.html">View case study</a>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-tag">Portfolio</div>
+                    <h3>Personal Brand Site</h3>
+                    <p>Signature website with layered motion and responsive typography.</p>
+                    <a class="project-link" href="Projects.html">View case study</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills section page about-section" id="skills">
+            <div class="section-head reveal">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-sub">A fast-moving stack built for production-grade results.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-header">
+                        <h3>JavaScript</h3>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level js"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-header">
+                        <h3>React</h3>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level react"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-header">
+                        <h3>UI Animation</h3>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level motion"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section page" id="contact">
+            <div class="section-head reveal">
+                <h2 class="section-title">Let's Build Something</h2>
+                <p class="section-sub">Tell me about your next idea. I respond within 24 hours.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Say hello</h3>
+                    <p>Looking for a bold web experience or a modern UI overhaul? I can help.</p>
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span>shashank@portfolio.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">call</span>
+                        <span>+91 99999 88888</span>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Project Type">
+                    <textarea rows="4" placeholder="Tell me about your project"></textarea>
+                    <button type="submit" class="con-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Shashank Singh Parihar. Crafted with precision and motion.</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <script src="script.js"></script>
+</body>
+</html>

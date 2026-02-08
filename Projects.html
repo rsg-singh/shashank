@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects | Shashank Singh Parihar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="body projects">
+    <div class="welcome-screen">
+        <svg viewBox="0 0 800 200" class="svg-container">
+            <text x="50%" y="50%" text-anchor="middle" class="shashank-text">Projects</text>
+        </svg>
+    </div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-ring"></div>
+        <p class="loader-text">Loading projects...</p>
+    </div>
+
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+
+    <div class="navigation">
+        <div class="nav-brand">
+            <span class="s">S</span>
+            <span class="shashank">haShank</span>
+        </div>
+        <ul class="ul- nav-menu" id="ula">
+            <li class="list nav-1 dis-hidde">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list active nav-1 dis-hidde">
+                <a href="Projects.html">
+                    <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                    <span class="text">My Projects</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="contact.html">
+                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">About Me</span>
+                </a>
+            </li>
+            <li class="list nav-1 dis-hidde">
+                <a href="services.html">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">Services</span>
+                </a>
+            </li>
+            <li class="list nav-1 hamburger dis-hidden">
+                <a href="#">
+                    <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                    <span class="text">Menu</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+
+        <div class="nav-actions">
+            <a class="nav-cta" href="contact.html">Let's Talk</a>
+            <div class="dark-mode-toggle" id="darkModeToggle">
+                <div class="sun-toggle"><ion-icon name="sunny" class="sun"></ion-icon></div>
+                <div class="moon-toggle"><ion-icon name="moon"></ion-icon></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="section page projects-hero" id="projects">
+            <div>
+                <p class="eyebrow reveal">Selected Work</p>
+                <h1 class="section-title reveal">Classic, eye-catching projects with premium detail.</h1>
+                <p class="section-sub reveal">Each build focuses on refined typography, clean structure, and animations that feel intentional, not noisy.</p>
+                <div class="hero-badges reveal">
+                    <span class="badge">Motion-first UI</span>
+                    <span class="badge">Clean systems</span>
+                    <span class="badge">Fast delivery</span>
+                </div>
+            </div>
+            <div class="profile-card reveal tilt-card">
+                <h2 class="section-title">Project Pillars</h2>
+                <p class="section-sub">Minimal, elegant, and bold — with performance at the core.</p>
+                <div class="profile-meta">
+                    <p><span>Stack:</span> HTML, CSS, JavaScript, React</p>
+                    <p><span>Focus:</span> UX flow, visual rhythm, micro-motion</p>
+                    <p><span>Goal:</span> Impact + clarity</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section page">
+            <div class="section-head reveal">
+                <h2 class="section-title">Project Showcase</h2>
+                <p class="section-sub">A curated set of builds that reflect my range and polish.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-1.svg" alt="Focus OS Dashboard preview">
+                    </div>
+                    <div>
+                        <h3>Focus OS</h3>
+                        <p class="section-sub">Analytics dashboard with layered motion and real-time widgets.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>React</span>
+                        <span>UI Motion</span>
+                        <span>Dashboard</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-2.svg" alt="SpiceCraft Storefront preview">
+                    </div>
+                    <div>
+                        <h3>SpiceCraft</h3>
+                        <p class="section-sub">E-commerce experience with immersive product storytelling.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>HTML/CSS</span>
+                        <span>Conversion</span>
+                        <span>Storefront</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-3.svg" alt="Sky-Cast Weather preview">
+                    </div>
+                    <div>
+                        <h3>Sky-Cast</h3>
+                        <p class="section-sub">Real-time forecasting app with fast API responses.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Node.js</span>
+                        <span>API</span>
+                        <span>UX</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-4.svg" alt="Vision Attendance preview">
+                    </div>
+                    <div>
+                        <h3>Vision Attendance</h3>
+                        <p class="section-sub">Computer vision attendance system with smart recognition.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>AI</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-5.svg" alt="Pulse Music preview">
+                    </div>
+                    <div>
+                        <h3>Pulse Music</h3>
+                        <p class="section-sub">Minimal music player with subtle motion and tactile controls.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>JavaScript</span>
+                        <span>Audio UI</span>
+                        <span>Motion</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+                <article class="project-tile reveal tilt-card">
+                    <div class="project-thumb">
+                        <img src="images/project-6.svg" alt="Signature Portfolio preview">
+                    </div>
+                    <div>
+                        <h3>Signature Portfolio</h3>
+                        <p class="section-sub">Personal branding site with parallax and cinematic sections.</p>
+                    </div>
+                    <div class="project-meta">
+                        <span>Design</span>
+                        <span>Branding</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a class="project-link" href="#">View case study</a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Shashank Singh Parihar. Crafted with precision and motion.</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <script src="script.js"></script>
+</body>
+</html>
